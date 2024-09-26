@@ -1,0 +1,46 @@
+2048 Game
+      A simple implementation of the popular 2048 puzzle game using Python's tkinter library for the graphical user interface (GUI) and numpy for grid manipulation.
+
+Features
+      Classic 2048 gameplay where the player slides tiles in four directions (up, down, left, right) to merge them and reach the 2048 tile.
+      Interactive GUI created using tkinter.
+      Displays the score, which increases as tiles are merged.
+      Automatically adds new tiles (2 or 4) after every valid move.
+      Handles game over situations with an overlay displaying the final score.
+Prerequisites
+      Make sure you have Python installed along with the required libraries. You can install the necessary dependencies using pip:
+
+
+pip install numpy
+      tkinter usually comes pre-installed with Python, but if it is missing, follow the appropriate instructions for your platform to install it.
+
+      Clone the repository or download the script.
+
+      Ensure that all dependencies are installed by running the following:
+
+pip install numpy
+      Run the 2048.py Python script:
+
+
+python 2048.py
+      The game window will open, and you can start playing using the arrow keys.
+
+Gameplay Instructions
+      Use the arrow keys on your keyboard to slide the tiles in the corresponding direction.
+      Tiles of the same value will merge to form a new tile with double the value.
+      The objective is to reach the 2048 tile, but you can continue playing to achieve a higher score.
+      Game Over
+      The game ends when there are no more possible moves. A new window will appear, displaying the final score, and you can exit the game.
+
+Code Overview
+      Game2048 class: Manages the game logic, the grid, and the user interface.
+      add_new_tile method: Adds a new tile (either 2 or 4) in an empty spot after every move.
+      move method: Handles tile movement and calls helper methods to shift the grid in the chosen direction.
+      _merge_line method: Merges tiles in a row or column based on the direction of movement.
+      update_grid method: Updates the game board's display after each move.
+      key_press method: Listens for user inputs (arrow keys) and triggers tile movement.
+      game_over method: Displays a game-over message when no more moves are possible.
+Technologies Used
+      Python
+      tkinter for GUI
+      numpy for grid and numerical operations
